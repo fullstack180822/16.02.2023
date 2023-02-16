@@ -15,6 +15,8 @@ public class Dog extends Animal {
     @Setter
     private int barkVolume;
 
+    private int barkVolume2;
+
     public Dog(String name) {
         //super(); // new Animal() // default
         this(name, 0.5f);
@@ -32,6 +34,12 @@ public class Dog extends Animal {
         // send message to db
         this.barkVolume = barkVolume;
         System.out.format("new dog %s created ", name);
+
+    }
+
+    @Override
+    public void makeSound() {
+        System.out.println("haw haw");
     }
 
     @Override

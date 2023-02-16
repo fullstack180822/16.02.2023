@@ -18,6 +18,10 @@ public class Animal {
         this.age = age;
     }
 
+    public void makeSound() {
+        System.out.println("wwwww");
+    }
+
     @Override
     public String toString() {
         return "Animal{" +
