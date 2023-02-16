@@ -1,8 +1,15 @@
 package example.com;
 
+
 public class Main {
 
+    public static int x;
+
     public static void main(String[] args) {
+
+        x = 1;
+
+        System.out.println(Math2.Pie);
 
         System.out.format("pie = %f \n", Circle.getPie());
 
@@ -10,8 +17,12 @@ public class Main {
         Circle c2 = new Circle(6);
         Circle c3 = new Circle(7);
 
+        System.out.println(c1.getRadius());
+
         //Circle.getPie();
         c1.getPie(); // is this wrong ?
+
+        System.out.println();
 
         System.out.format("area  = %f , pie = %f \n", c1.getArea(), Circle.getPie());
         Circle.setPie(3.9f);

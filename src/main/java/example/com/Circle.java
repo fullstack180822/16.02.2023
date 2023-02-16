@@ -1,9 +1,15 @@
 package example.com;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.Random;
+
 
 public class Circle {
 
+    @Getter
+    @Setter
     private float radius;
     private static float pie = 3.14f;
 
@@ -29,15 +35,7 @@ public class Circle {
         //this.pie = 3.14f * (new Random().nextFloat()); // final can be assigned a  different value bot only during ctor
     }
 
-    public float getRadius() {
-        return radius;
-    }
 
-    public void setRadius(float radius) {
-        if (radius > 0) {
-            this.radius = radius;
-        }
-    }
 
     public double getArea() {
         return this.pie * Math.pow(radius, 2);
